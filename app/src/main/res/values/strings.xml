@@ -4,4 +4,7 @@
     <string name="show_snackbar">Show SnackBar</string>
     <string name="go_to_second_screen">Go to Second screen</string>
     <string name="go_to_home_again">Go to Home again</string>
+    <string name="showSnackOnHomeScreen">Test Home Screen</string>
+    <string name="showSnackOnSecondScreen">Test Second Screen</string>
+    <string name="showSnackOnThirdScreen">Test Third Screen</string>
 </resources>

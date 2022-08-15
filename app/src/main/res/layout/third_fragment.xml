@@ -6,12 +6,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/thirdFragmentBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/secondFragmentBtn"
+            android:id="@+id/thirdFragmentBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/go_to_home_again"
             android:textAllCaps="false"
+            android:backgroundTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -23,9 +36,9 @@
             android:layout_height="wrap_content"
             android:text="@string/show_snackbar"
             android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="@+id/secondFragmentBtn"
-            app:layout_constraintStart_toStartOf="@+id/secondFragmentBtn"
-            app:layout_constraintTop_toBottomOf="@+id/secondFragmentBtn" />
+            app:layout_constraintEnd_toEndOf="@+id/thirdFragmentBtn"
+            app:layout_constraintStart_toStartOf="@+id/thirdFragmentBtn"
+            app:layout_constraintTop_toBottomOf="@+id/thirdFragmentBtn" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
