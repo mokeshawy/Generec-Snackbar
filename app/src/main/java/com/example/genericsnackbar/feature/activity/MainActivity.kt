@@ -1,8 +1,9 @@
-package com.example.genericsnackbar
+package com.example.genericsnackbar.feature.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.genericsnackbar.R
 import com.example.genericsnackbar.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
