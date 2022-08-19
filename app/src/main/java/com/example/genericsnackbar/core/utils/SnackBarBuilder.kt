@@ -3,6 +3,7 @@ package com.example.genericsnackbar.core.utils
 import android.app.Activity
 import android.graphics.Color
 import android.view.View
+import android.view.ViewGroup
 import com.example.genericsnackbar.databinding.GenerecSnacbarLayoutBinding
 import com.google.android.material.snackbar.Snackbar
 
@@ -102,6 +103,7 @@ class SnackBarBuilder {
         snackBarLayout?.apply {
             setBackgroundColor(Color.TRANSPARENT)
             setPadding(0, 0, 0, 0)
+            view.layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT
             addView(binding.root, 0)
         }
         show()
