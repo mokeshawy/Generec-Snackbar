@@ -45,7 +45,8 @@ class ThirdFragment : Fragment() {
             .setStartIcon(R.drawable.ic_vector_start_action)
             .setStartActionBtn {
                 showToast()
-            }.show(requireActivity(), binding.root)
+            }.build(requireActivity(), binding.root)
+            .show()
     }
 
     private fun showToast() {

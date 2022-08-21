@@ -45,7 +45,8 @@ class SecondFragment : Fragment() {
             .setEndIcon(R.drawable.ic_vector_end_action)
             .setEndActionBtn {
                 showToast()
-            }.show(requireActivity(), binding.root)
+            }.build(requireActivity(), binding.root)
+            .show()
     }
 
     private fun showToast() {

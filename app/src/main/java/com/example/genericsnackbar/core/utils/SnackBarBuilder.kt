@@ -17,7 +17,7 @@ class SnackBarBuilder {
     private var startActionBtn: (View) -> Unit = {}
     private var endActionBtn: (View) -> Unit = {}
 
-    fun show(activity: Activity, view: View): Snackbar {
+    fun build(activity: Activity, view: View): Snackbar {
         val inflater = activity.layoutInflater
         binding = GenerecSnacbarLayoutBinding.inflate(inflater)
 
@@ -104,6 +104,5 @@ class SnackBarBuilder {
             setPadding(0, 0, 0, 0)
             addView(binding.root, 0)
         }
-        show()
     }
 }
